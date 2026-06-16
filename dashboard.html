@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Demokratie Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="header-title">📊 Dashboard</div>
+        <div class="view-selector">
+            <button class="view-button active" onclick="switchView('current')">Aktuell</button>
+            <button class="view-button" onclick="switchView('week')">📅 Woche</button>
+            <button class="view-button" onclick="switchView('stats')">📈 Statistik</button>
+        </div>
+    </div>
+
+    <!-- AKTUELL (Grid-Ansicht) -->
+    <div class="container grid-container" id="currentView">
+        <!-- TOP VOICES -->
+        <div class="panel top-voices">
+            <div class="panel-title">🌟 Top Voices</div>
+            <div id="topVoicesContainer">
+    <div class="voice-item">
+        <div class="voice-title">Frau A. will Demokratietag organisieren</div>
+        <div class="voice-votes">
+            <button class="vote-button" onclick="upVote(1)">👍</button>
+            <span class="vote-count" id="vote-1">24</span>
+            <button class="vote-button" onclick="downVote(1)">👎</button>
+        </div>
+    </div>
+    <div class="voice-item">
+        <div class="voice-title">Kaffeequalität im Pausenraum verbessern</div>
+        <div class="voice-votes">
+            <button class="vote-button" onclick="upVote(2)">👍</button>
+            <span class="vote-count" id="vote-2">18</span>
+            <button class="vote-button" onclick="downVote(2)">👎</button>
+        </div>
+    </div>
+    <div class="voice-item">
+        <div class="voice-title">Mehr flexible Arbeitszeiten ermöglichen</div>
+        <div class="voice-votes">
+            <button class="vote-button" onclick="upVote(3)">👍</button>
+            <span class="vote-count" id="vote-3">16</span>
+            <button class="vote-button" onclick="downVote(3)">👎</button>
+        </div>
+    </div>
+    <div class="voice-item">
+        <div class="voice-title">Wellness-Programm für Mitarbeiter starten</div>
+        <div class="voice-votes">
+            <button class="vote-button" onclick="upVote(4)">👍</button>
+            <span class="vote-count" id="vote-4">14</span>
+            <button class="vote-button" onclick="downVote(4)">👎</button>
+        </div>
+    </div>
+    <div class="voice-item">
+        <div class="voice-title">Bessere Klimatisierung in den Büros</div>
+        <div class="voice-votes">
+            <button class="vote-button" onclick="upVote(5)">👍</button>
+            <span class="vote-count" id="vote-5">11</span>
+            <button class="vote-button" onclick="downVote(5)">👎</button>
+        </div>
+    </div>
+    <div class="voice-item">
+        <div class="voice-title">Monthly Team Building Events</div>
+        <div class="voice-votes">
+            <button class="vote-button" onclick="upVote(6)">👍</button>
+            <span class="vote-count" id="vote-6">9</span>
+            <button class="vote-button" onclick="downVote(6)">👎</button>
+        </div>
+    </div>
+    <div class="voice-item">
+        <div class="voice-title">Verbesserung der Fahrstuhl-Reinigung</div>
+        <div class="voice-votes">
+            <button class="vote-button" onclick="upVote(7)">👍</button>
+            <span class="vote-count" id="vote-7">7</span>
+            <button class="vote-button" onclick="downVote(7)">👎</button>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <!-- CHART -->
+        <div class="panel chart-panel">
+            <div class="panel-title">😊 Stimmung im Betrieb</div>
+            <div class="chart-container">
+                <svg class="pie-chart" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="90" fill="none" stroke="#27ae60" stroke-width="28" stroke-dasharray="169.646 282.743" stroke-dashoffset="0"></circle>
+                    <circle cx="100" cy="100" r="90" fill="none" stroke="#f39c12" stroke-width="28" stroke-dasharray="84.823 282.743" stroke-dashoffset="-169.646"></circle>
+                    <circle cx="100" cy="100" r="90" fill="none" stroke="#e74c3c" stroke-width="28" stroke-dasharray="28.274 282.743" stroke-dashoffset="-254.469"></circle>
+                    <text x="100" y="110" text-anchor="middle" font-size="28" font-weight="bold" fill="#667eea">60%</text>
+                </svg>
+            </div>
+            <div class="chart-legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #27ae60;"></div>
+                    <span class="legend-text">Zufrieden</span>
+                    <span class="legend-percentage">60%</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #f39c12;"></div>
+                    <span class="legend-text">Neutral</span>
+                    <span class="legend-percentage">30%</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #e74c3c;"></div>
+                    <span class="legend-text">Unzufrieden</span>
+                    <span class="legend-percentage">10%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STATS SECTION -->
+    <div id="statsSection" style="display: none; padding: 24px;">
+        <div class="stats-panel">
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <div class="stat-label">Diese Woche</div>
+                <div class="stat-value" id="statWeek">5/7</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🔥</div>
+                <div class="stat-label">Streak</div>
+                <div class="stat-value" id="statStreak">5</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⭐</div>
+                <div class="stat-label">Engagement</div>
+                <div class="stat-value" id="statEngagement">12</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">😊</div>
+                <div class="stat-label">Dein Durchschnitt</div>
+                <div class="stat-value">3.2/5</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BADGES SECTION -->
+    <div id="badgesSection" style="display: none; padding: 24px;">
+        <div class="badges-panel">
+            <div class="badges-title">🏆 Deine Abzeichen</div>
+            <div class="badges-grid">
+                <div class="badge-item">
+                    <div class="badge-emoji">🔥</div>
+                    <div class="badge-name">Streak</div>
+                    <div class="badge-progress">5 Tage aktiv</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-emoji">⭐</div>
+                    <div class="badge-name">Engagement</div>
+                    <div class="badge-progress">10+ Anliegen</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="badge-item locked">
+                    <div class="badge-emoji">🎯</div>
+                    <div class="badge-name">Champion</div>
+                    <div class="badge-progress">17/30 Tage</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 56.7%;"></div>
+                    </div>
+                </div>
+                <div class="badge-item locked">
+                    <div class="badge-emoji">👑</div>
+                    <div class="badge-name">Democracy</div>
+                    <div class="badge-progress">30/50 Votes</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM NAVIGATION -->
+    <nav class="bottom-nav">
+        <a href="voting.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                <line x1="15" y1="9" x2="15.01" y2="9"/>
+            </svg>
+            <span>Voting</span>
+        </a>
+        <a href="concerns.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+            </svg>
+            <span>Anliegen</span>
+        </a>
+        <a href="dashboard.html" class="nav-item active">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"/>
+                <rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/>
+                <rect x="3" y="14" width="7" height="7"/>
+            </svg>
+            <span>Dashboard</span>
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
