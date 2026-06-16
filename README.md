@@ -14,27 +14,27 @@ Im Kurs *Designforschung* untersuchen wir, wie eine digitale Anwendung im Arbeit
 
 ## 💡 Konzept und Vision
 
-Unsere Idee ist ein System, mit dem Mitarbeitende regelmäßig eigene Gedanken, Ideen und Stimmungen einbringen können – niederschwellig, anonym und direkt im Arbeitsalltag.
+Unsere Idee ist ein System, mit dem Mitarbeitende regelmäßig eigene Gedanken, Ideen und Stimmungen einbringen können. Niederschwellig, anonym und direkt im Arbeitsalltag.
 
 ### Kernfunktionen der geplanten Workplace-App
 
 - **Ideen & Probleme einreichen**  
-  Jede:r kann Vorschläge formulieren oder auf Anliegen anderer reagieren – etwa durch Zustimmung oder Ablehnung. So werden Themen sichtbar, die mehrere Personen beschäftigen.
+  Jede:r kann Vorschläge formulieren oder auf Anliegen anderer reagieren, etwa durch Zustimmung oder Ablehnung. So werden Themen sichtbar, die mehrere Personen beschäftigen.
 
 - **Stimmungs- und Meinungsbilder**  
   Kurze, wiederkehrende Abstimmungen zu Stimmung, Workload oder allgemeiner Zufriedenheit ermöglichen ein kontinuierliches Pulse-Checking.
 
 - **Persönliche Auswertung**  
-  Mitarbeitende erhalten eine private Rückmeldung, z. B. wie oft sie sich eingebracht haben oder an wie vielen Tagen im Monat es ihnen gut ging.
+  Mitarbeitende erhalten eine private Rückmeldung, z. B. an wie vielen Tagen im Monat es ihnen gut ging.
 
 - **Anonymes Dashboard**  
   Die gesammelten Daten fließen in eine für alle einsehbare Übersicht direkt am Arbeitsplatz. Dort werden z. B. visualisiert:
   - Mitarbeiterzufriedenheit im Zeitverlauf
   - häufig genannte oder hoch bewertete Themen
-  - Ideenpitches und mögliche „Personenmatches“ für die Umsetzung
+  - Ideenpitches für die Umsetzung
   - aufkommende Trends und Handlungsfelder
 
-Ziel des Dashboards ist es, Teams und Organisationen dabei zu helfen, **relevante Themen schneller zu erkennen und daraus konkrete Maßnahmen abzuleiten** – demokratisch, transparent und auf Augenhöhe.
+Ziel des Dashboards ist es, Teams und Organisationen dabei zu helfen, **relevante Themen schneller zu erkennen und daraus konkrete Maßnahmen abzuleiten**. Demokratisch, transparent und auf Augenhöhe.
 
 ---
 
@@ -62,7 +62,7 @@ Zur Veranschaulichung der geplanten Visualisierung sind im Repository zwei Mocku
 
 ## 🧑‍🔬 Mitmachen & Testen
 
-Du bist herzlich eingeladen, den Prototypen zu testen und uns Feedback zu geben. Es gibt **kein Richtig oder Falsch** – uns interessiert deine spontane, ehrliche Wahrnehmung.
+Du bist herzlich eingeladen, den Prototypen zu testen und uns Feedback zu geben. Es gibt **kein Richtig oder Falsch!** Uns interessiert deine spontane, ehrliche Wahrnehmung.
 
 So kannst du teilnehmen:
 
@@ -78,7 +78,7 @@ Alle Angaben werden **vollständig anonym** ausgewertet und dienen ausschließli
 
 ## 🎓 Hintergrund
 
-Dieses Projekt entsteht im Kurs **Designforschung** an der [Berliner Hochschule für Technik](https://www.bht-berlin.de/) (BHT) im Kontext von Transformationsdesign und partizipativer Arbeitsgestaltung. Der Prototyp ist als Forschungsartefakt zu verstehen, mit dem wir gestalterische Hypothesen überprüfen und weiterentwickeln.
+Dieses Projekt entsteht im Kurs **Designforschung** an der [Berliner Hochschule für Technik](https://www.bht-berlin.de/) (BHT).
 
 ---
 
@@ -86,8 +86,8 @@ Dieses Projekt entsteht im Kurs **Designforschung** an der [Berliner Hochschule 
 
 - Der Prototyp ist eine statische Webanwendung (HTML, CSS, JavaScript).
 - Gehostet mit GitHub Pages aus diesem Repository.
-- Die Mockups liegen als PNG-Dateien im Ordner `mockups/`.
-- Für die spätere Entwicklung ist eine Anbindung an eine anonymisierte Datenbank sowie eine Echtzeit-Dashboard-Komponente vorgesehen.
+- Die Mockups liegen im Ordner `mockups/`.
+- Für die spätere Entwicklung wäre eine Anbindung an eine anonymisierte Datenbank sowie eine Echtzeit-Dashboard-Komponente vorgesehen.
 
 ---
 
