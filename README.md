@@ -52,10 +52,10 @@ Einige der oben beschriebenen Funktionen sind bereits angedeutet, andere liegen 
 
 Zur Veranschaulichung der geplanten Visualisierung sind im Repository zwei Mockups enthalten, die zeigen, wie das Dashboard am Arbeitsplatz später aussehen könnte:
 
-![Dashboard Mockup 1](mockups/ChatGPT%20Image%2016.%20Juni%202026%2C%2009_46_02.png)  
+![Dashboard Mockup 1](mockups/Mockup_Großraumbüro.jpg)  
 *Statisches Mockup, wie das Dashboard in einem Großraumbüro wirken könnte.*
 
-![Dashboard Mockup 2](mockups/ezgif-8d3a76eeb6674175.gif)  
+![Dashboard Mockup 2](mockups/Mockup_animated.gif)  
 *Animation des alternativen Dashboard-Konzepts mit Fokus auf Ideenpitches und Mitwirkungsstatistiken in Aktion.*
 
 ---
