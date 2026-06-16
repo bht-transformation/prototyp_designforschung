@@ -68,7 +68,8 @@ So kannst du teilnehmen:
 
 1. **Öffne den Prototyp** unter dem oben stehenden Link.
 2. **Probiere ihn in Ruhe aus** – klicke dich durch die vorhandenen Ansichten.
-3. **Kehre anschließend zum Fragebogen zurück** (wird dir im Kurs bereitgestellt) und beantworte die Fragen.  
+3. **Kehre anschließend zum Fragebogen zurück**, um deine Eindrücke festzuhalten:  
+   👉 **[Zum Fragebogen](https://forms.gle/M1wKYa6neGMjjqnJ6)**  
    *Tipp: Deine bisherigen Eingaben im Formular bleiben zwischengespeichert, wenn du zwischen den Tabs wechselst.*
 
 Alle Angaben werden **vollständig anonym** ausgewertet und dienen ausschließlich der wissenschaftlichen Untersuchung im Rahmen des Kurses.
