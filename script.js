@@ -23,7 +23,7 @@ let concernVotes = JSON.parse(localStorage.getItem('concernVotes')) || {};
 
 /* --- Top Voices (Abstimmung) --- */
 const defaultTopVoices = [
-    { id: 1, title: "Frau Afflerbach will Demokratietag organisieren", votes: 24 },
+    { id: 1, title: "Frau B. will Demokratietag organisieren", votes: 24 },
     { id: 2, title: "Kaffeequalität im Pausenraum verbessern", votes: 18 },
     { id: 3, title: "Mehr flexible Arbeitszeiten ermöglichen", votes: 16 },
     { id: 4, title: "Wellness-Programm für Mitarbeiter starten", votes: 14 },
